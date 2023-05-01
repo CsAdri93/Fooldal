@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="fooldal.css">
-    
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css"> 
+    <script src="bootstrap/jquery.min.js"></script>
+	<script src="bootstrap/popper.min.js"></script>
+	<script src="bootstrap/bootstrap.min.js"></script>
+
     <title>Fashion Webárúház</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
@@ -17,49 +21,140 @@
             </div>
         </div>
         <!--Navbar-->
-    <div class="container h-100">
-        <nav class="navbar navbar-expand-lg bg-warning my-2">
-            <ul>
-                <li>
-                    <a class="nav-item" href="#index.html">Főoldal</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Főoldal<span class="sr-only"></span></a>
                 </li>
-                <li>
-                    <a href="#rolunk" href="rolunk.html">Rólunk</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="rolunk.html">Rólunk <span class="sr-only"></span></a>
                 </li>
-                <li>
-                    <a href="#termekek" href="termekek.html">Termékek</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Termékek
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="noi.html">Női</a>
+                    <a class="dropdown-item" href="#">Férfi</a>
+                    <a class="dropdown-item" href="#">Gyerek</a>
+                  </div>
                 </li>
-                    <li>Ruhák</li>
-                        <li>
-                            <a href="noi.html" target="_blank"><img src="/images/noi.jpg" height="200%" alt="Nöi" title="=Női"></a>
-                        </li>
-                        <li>
-                            <a href="ffi.html" target="_blank"> <img src="/images/ferfi.jpg" height="200%"  alt="Férfi" title="=Férfi"></a>
-                        </li>
-                        <li>
-                            <a href="gyerek.html" target="_blank"><img src="/images/gyerek.jpg" height="200%"  alt="Gyerek" title="=Gyerek"></a>
-                        </li>
-                    <li>Kiegészítők</li>
-                    <li>
-                        <a href="kieg.html" target="_blank"><img src="/images/kiegeszitok.jpg" alt="Kiegészítők" title="=Kiegészítők"></a>
-                    </li>  
-                    <li>Cipők</li>
-                    <li>
-                        <a href="cipok.html" target="_blank"><img src="/images/cipo.jpg" alt="Cipők" title="=Cipők"></a>
-                    </li>  
-                    <li>
-                        <a href="#elerhetosegek" href="elerhetosegek.html" target="_blank">Elérhetőségek</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cipo.html">Cipő <span class="sr-only"></span></a>
                 </li>
-            </ul>
-        </nav>
-    </div>
+              </ul>
+            </div>
+          </nav>
     </header>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 img-fluid"  src="images/vasarlo.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/ruha.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/cipo.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/kiegeszitok2.jpg" alt="Fourth slide">
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="ruhak.html"><img src="images/ruha.jpg" class="card-img-top" alt="..."></a>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="ruhak.html"><img src="..." class="card-img-top" alt="..."></a>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="ruhak.html"><img src="..." class="card-img-top" alt="..."></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <a href="ruhak.html"><img src="images/ruha.jpg" class="card-img-top" alt="ruhak"></a>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <a href="ruhak.html"><img src="..." class="card-img-top" alt="..."></a>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <a href="ruhak.html"><img src="..." class="card-img-top" alt="..."></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <a href="ruhak.html"><img src="images/ruha.jpg" class="card-img-top" alt="..."></a>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <a href="ruhak.html"><img src="..." class="card-img-top" alt="..."></a>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <a href="ruhak.html"><img src="..." class="card-img-top" alt="..."></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
     <!-- Lábléc -->	
     <footer>
-		<div class="lablec text-center p-2 mt-1 bg-warning container">
+		<div class="lablec text-center mt-1 bg-warning container">
 			<p>Készítették: 13/E osztály diákjai Miskolc,2023.05.08</p>
 		</div>
     </footer>
+
 </body>
 </html>
